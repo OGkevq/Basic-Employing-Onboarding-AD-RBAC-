@@ -1,0 +1,26 @@
+. Jane's User Identity is in the Operations OU
+2. I found that Jane was in the Operations OU, but she is supposed to be in the HR OU, because she is an HR specialist.
+3. Jane Cooper is currently a member of the operations-users security group. She should be a member of the HR-users security group.
+
+This explains the symptoms in the ticket because it wasn't a login issue. Jane could still log in to her account just fine, 
+but didn't have access to everything she needed to do her job.
+Being placed in the wrong OU is the reason for her UI/interface looking different than her peers in the same department.
+Being placed in the wrong security group stops her from having access to HR files.
+
+
+Ticket number: NMG-0047
+Affected user: Jane Cooper (jcooper@NMG.com)
+
+Issue reported: Unable to access HR shared resources. Desktop policies and mapped drives differ from teammates.
+Root cause: The user Jane Cooper was in the wrong OU and the wrong security group.
+
+Fix applied: Changed Jane's OU from Operations to HR, did the same with the security group, because she belongs in HR and needs
+access to HR job software. I also made sure to delete access for the Operations security group and OU to ensure compliance with
+the Principle of Least Privilege.
+
+Verification: I verified that user Jane Cooper no longer shows up in the Operations-user OU and that she does show up in HR-users
+OU. I also checked the user properties to confirm that access to Operations-Users was no longer available. 
+
+Date resolved: 7/27/2026
+
+Resolved by: Kevin Quintana
