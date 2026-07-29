@@ -1,4 +1,4 @@
-. Jane's User Identity is in the Operations OU
+1. Jane's User Identity is in the Operations OU
 2. I found that Jane was in the Operations OU, but she is supposed to be in the HR OU, because she is an HR specialist.
 3. Jane Cooper is currently a member of the operations-users security group. She should be a member of the HR-users security group.
 
